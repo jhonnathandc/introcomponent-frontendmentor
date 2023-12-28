@@ -2,13 +2,14 @@
 
 This project is part of the challenges of [FrontEnd Mentor](https://www.frontendmentor.io/).
 
-[Access the website here.](https://singleprice-frontendmentor.vercel.app/)
+[Access the website here.](https://introcomponent-frontendmentor.vercel.app/)
 <br>
 <br>
-[Access the challenge here.](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
+[Access the challenge here.](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1)
 
 ## Demonstration
-![Desktop + Mobile - 5](https://github.com/jhonnathandc/singleprice-frontendmentor/assets/82620787/17043db2-7cec-48c3-bc4f-9f81d3a9c443)
+![Desktop + Mobile - 5](https://github.com/jhonnathandc/introcomponent-frontendmentor/assets/82620787/c45a872d-a148-422a-a873-c1720b6a7405)
+
 
 ## More information
 
@@ -16,10 +17,11 @@ It was built as proposed in the design, using:
 
 - HTML
 - CSS
+- JavaScript
 
 ## Stack
 
-**Front-end:** HTML, CSS
+**Front-end:** HTML, CSS, JavaScript
 
 ## License
 
