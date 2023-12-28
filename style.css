@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ff7979;
+  font-family: "Poppins";
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5rem;
+
+  max-width: 111rem;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 2.4rem;
+}
+
+.main-title {
+  flex: 1;
+}
+
+.main-title h1 {
+  font-size: 5rem;
+  line-height: 5.5rem;
+  letter-spacing: -0.052rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 3.2rem;
+}
+
+.main-title p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.main-form {
+  flex: 1;
+}
+
+.main-form .btn {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  letter-spacing: -0.027rem;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+
+  display: inline-block;
+  background-color: #5e54a4;
+  width: 100%;
+  padding: 1.7rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.8rem 0 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 2.4rem;
+}
+
+.main-form .btn span {
+  font-weight: 700;
+}
+
+.main-form .form {
+  background-color: #ffffff;
+  padding: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.8rem 0 0 rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.main-form .form div {
+  position: relative;
+}
+
+.main-form .form div::after {
+  content: "";
+  display: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("./images/icon-error.svg");
+  position: absolute;
+  right: 2.7rem;
+  z-index: 1;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.main-form .form div.error::after {
+  display: block;
+}
+
+.main-form .form div p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #ff7979;
+
+  position: absolute;
+  bottom: 2.2rem;
+  right: 0;
+  display: none;
+}
+
+.main-form .form div.error p {
+  display: block;
+}
+
+.main-form .form label {
+  visibility: hidden;
+  position: absolute;
+}
+
+.main-form .form input {
+  background-color: #ffffff;
+  padding: 1.5rem 3.2rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #dedede;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.025rem;
+  font-weight: 600;
+  color: #3d3b48;
+  outline: none;
+}
+
+.main-form .form div.error input {
+  margin-bottom: 4.2rem;
+  border: 0.2rem solid #ff7979;
+}
+
+.main-form .form input:focus {
+  border-color: #5e54a4;
+}
+
+.main-form .form .btn-form {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: #ffffff;
+
+  background-color: #38cc8b;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 -0.4rem 0 0 rgba(0, 0, 0, 0.09) inset;
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+  transition: 0.3s ease;
+}
+
+.main-form .form .btn-form:hover {
+  background-color: #77e2b3;
+}
+
+.main-form .form .terms {
+  font-size: 1.1rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  color: #bab7d4;
+  text-align: center;
+}
+
+.main-form .form p span {
+  font-weight: 700;
+  color: #ff7979;
+}
+
+@media screen and (max-width: 720px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 6.4rem;
+    margin-top: 8.8rem;
+  }
+
+  .main-title h1 {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: -0.029rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+  }
+
+  .main-title p {
+    text-align: center;
+  }
+
+  .main-form {
+    flex: 1;
+    width: 100%;
+    padding-bottom: 6.8rem;
+  }
+
+  .main-form .form {
+    padding: 2.4rem;
+    border-radius: 1rem;
+  }
+
+  .main-form .form input {
+    margin-bottom: 1.6rem;
+    padding: 1.5rem 2rem;
+  }
+
+  .main-form .form .btn-form:hover {
+    background-color: #77e2b3;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .background {
+    background-image: url("./images/bg-intro-mobile.png");
+  }
+}
